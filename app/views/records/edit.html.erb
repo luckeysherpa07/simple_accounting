@@ -1,0 +1,9 @@
+<div class="container">
+    <h3>Edit Record</h3>
+        <%= simple_form_for @record, method: :patch do |f| %>
+          <%= f.input :title %>
+          <%= f.input :amount %>
+          <%= f.input :date %>
+          <%= f.submit 'Submit', class:'btn btn-primary' %>
+        <% end %>
+</div>
